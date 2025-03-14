@@ -1,0 +1,181 @@
+/* Basic Reset and General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+header .logo {
+    float: left;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section Styling */
+#hero {
+    background-color: #e9e9e9;
+    color: #333;
+    text-align: center;
+    padding: 5em 0;
+}
+
+#hero .hero-content {
+    width: 80%;
+    margin: auto;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Portfolio Section Styling */
+#portfolio {
+    padding: 3em 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.portfolio-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+/* About and Contact Section Styling */
+#about, #contact {
+    padding: 3em 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+#about h2, #contact h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#about p, #contact p {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky; /* Or fixed, depending on desired behavior */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Basic Responsive Design */
+@media (max-width: 768px) {
+    header .logo,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #hero .hero-content {
+        width: 90%;
+    }
+
+    #about p, #contact p {
+        width: 90%;
+    }
+}
